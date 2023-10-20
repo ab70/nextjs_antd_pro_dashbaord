@@ -1,13 +1,6 @@
+"use client"
 import React, { useState } from 'react';
-import {
-  GithubFilled,
-  InfoCircleFilled,
-  PlusCircleFilled,
-  QuestionCircleFilled,
-  SearchOutlined,
-} from '@ant-design/icons';
 import { PageContainer, ProCard, ProLayout } from '@ant-design/pro-components';
-import { Input } from 'antd';
 import defaultProps from '../defaultProps';
 export default function RootLayout({ children }) {
   const settings = {
@@ -20,7 +13,7 @@ export default function RootLayout({ children }) {
     // }
   };
 
-  const [pathname, setPathname] = useState('/list/sub-page/sub-sub-page1');
+  const [pathname, setPathname] = useState('/admin/');
 
   return (
     <html>
@@ -50,7 +43,7 @@ export default function RootLayout({ children }) {
                 width: '331px',
               },
             ]}
-            // {...defaultProps}
+            {...defaultProps}
             location={{
               pathname,
             }}
